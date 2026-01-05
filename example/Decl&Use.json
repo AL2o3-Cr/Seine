@@ -3,13 +3,16 @@
     {
         "obj":"",
         "name":"",
-        "objAddress":""
+        "objAddress":"",
+        "fileAddress":"",
+        "decled":"~obj"
     },
     "models":
     {
+        "Name":["as", "~name"],
         "DeclNew":
-            ["new", "~obj", "~name", ";"],
-        "DeclNewIn":
-            ["in", "~objAddress", "%DeclNew"]
+            ["new", "~decled"],
+        "DoIn":
+            ["in", "~objAddress"]
     }
 }
